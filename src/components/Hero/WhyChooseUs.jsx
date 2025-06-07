@@ -24,11 +24,11 @@ export default function WhyChooseUs() {
     },
   ];
   return (
-    <section className="py-20 px-5 md:px-20 bg-gradient-to-b from-blue-100 via-blue-50 to-white relative overflow-hidden">
-      <h4 className="text-sm text-blue-600 font-semibold mb-1">🎓 Why Choose Us</h4>
+    <section className="py-20 px-8 md:px-20 bg-gradient-to-b from-blue-100 via-blue-50 to-white relative overflow-hidden ">
+      <h4 className="text-sm text-[#342c74] font-semibold mb-1">🎓 Why Choose Us</h4>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 max-w-xl mb-6">
         Built on Trust: Discover Why Our Students{" "}
-        <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text italic underline decoration-blue-400">
+        <span className=" text-[#342c74] italic underline decoration-blue-400">
           Choose us
         </span>
       </h2>
@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="flex items-center justify-between mt-10">
-            <button className="bg-gradient-to-r from-orange-400 to-pink-500 text-white md:px-6 md:py-2 md:text-sm rounded-full shadow hover:scale-105 transition text-xs py-1  px-1">
+            <button className=" bg-orange-500 text-white md:px-6 md:py-2 md:text-sm rounded-full shadow hover:scale-105 transition text-xs py-1  px-1">
               » Know More
             </button>
             <div className="flex items-center gap-3 bg-blue-100 md:px-4 md:py-2 px-1 rounded-full">

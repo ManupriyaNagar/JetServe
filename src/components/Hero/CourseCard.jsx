@@ -47,7 +47,7 @@ export default function CourseCard1() {
           className="w-full h-48 object-cover rounded-t-2xl"
         />
         <div className="p-5">
-          <p className="text-sm text-[#00aaff] font-semibold">{category}</p>
+          <p className="text-sm text-[#342c74] font-semibold">{category}</p>
           <div className="flex items-center text-sm text-gray-500 mt-1 space-x-3">
             <p>✈️ {lessons} Flying Hours</p>
             <p>⏰ {duration}</p>
@@ -58,10 +58,10 @@ export default function CourseCard1() {
             <span className="text-gray-600 text-sm ml-2">{reviews} Reviews</span>
           </div>
           <div className="flex items-center justify-between mt-4">
-            <button className="bg-[#00aaff] text-white px-4 py-2 rounded-full text-sm hover:bg-[#0088cc] transition">
+            <button className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm hover:bg-[#0088cc] transition">
               Enroll Now
             </button>
-            <span className="text-[#00aaff] font-bold text-lg">₹{price.toLocaleString('en-IN')}</span>
+            <span className="text-[#342c74] font-bold text-lg">₹{price.toLocaleString('en-IN')}</span>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function CourseCard1() {
   return (
     <section className="px-5 py-10 md:px-20 bg-gradient-to-b from-white via-blue-50 to-blue-100 min-h-screen">
       <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        Fly High with FlyOla: A Journey of <span className="text-[#00aaff] italic">Aviation Excellence</span>
+        Fly High with FlyOla: A Journey of <span className="text-[#342c74] italic">Aviation Excellence</span>
       </h2>
       <p className="text-center text-gray-600 mb-8">
         Up to ₹10 Lakh scholarships available for meritorious students!

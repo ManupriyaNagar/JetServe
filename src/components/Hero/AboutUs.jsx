@@ -26,17 +26,17 @@ export default function AboutUs() {
               className="rounded-xl w-80 h-32"
             />
             <div className="absolute -bottom-6 -left-6 bg-white shadow-md px-4 py-2 rounded-lg text-sm font-bold">
-              45+ <span className="text-indigo-600 font-normal">Awards Winning</span>
+              45+ <span className="text-[#342c74] font-normal">Awards Winning</span>
             </div>
           </div>
         </div>
 
         {/* Right Side - Text Content */}
         <div className="text-black">
-          <p className="text-indigo-600 font-semibold mb-2">About Us</p>
+          <p className="text-[#342c74] font-semibold mb-2">About Us</p>
            <h2 className="text-3xl md:text-4xl font-bold leading-snug">
             Our Story: Empowering Pilots, <br />
-            Driven by <span className="text-[#00aaff] italic">Excellence</span>
+            Driven by <span className="text-[#342c74] italic">Excellence</span>
           </h2>
 
            <p className="text-gray-600 mt-6 mb-8">
@@ -59,10 +59,10 @@ export default function AboutUs() {
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="bg-indigo-500 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-600 transition">
+            <button className="bg-orange-500 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-600 transition">
               Know More
             </button>
-            <span className="text-yellow-600 text-xl font-bold">Live Class</span>
+            {/* <span className="text-yellow-600 text-xl font-bold">Live Class</span> */}
           </div>
         </div>
       </div>

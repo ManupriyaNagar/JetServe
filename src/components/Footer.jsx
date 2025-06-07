@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
             <div className="mt-6 space-y-4 text-sm">
               <div className="flex items-start">
-                <FaMapMarkerAlt className="text-[#00aaff] mr-3 mt-1" />
+                <FaMapMarkerAlt className="text-[#342c74] mr-3 mt-1" />
                 <div>
                   <span className="font-semibold text-[#00aaff]">Head Office:</span>
                   <br /> Indraprasth Aerospace & Knowledge Park, Sector-77, Delhi-Jaipur NH-08, Gurgaon, Haryana-122004

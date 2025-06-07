@@ -29,9 +29,9 @@ export default function TestimonialsSection() {
 
   return (
     <section className="py-20 px-5 md:px-20 bg-gradient-to-b from-white via-blue-50 to-blue-100">
-      <h4 className="text-sm text-[#00aaff] font-semibold mb-1">✈️ Student Success</h4>
+      <h4 className="text-sm text-[#342c74] font-semibold mb-1">✈️ Student Success</h4>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 max-w-2xl mb-6">
-        Hear from Our Pilots: <span className="text-[#00aaff] italic">Stories of Success</span>
+        Hear from Our Pilots: <span className="text-[#342c74] italic">Stories of Success</span>
       </h2>
       <p className="max-w-2xl text-gray-600 mb-12">
         Discover how FlyOla Aviation Academy has transformed aspiring pilots into industry professionals with world-class training and support.
