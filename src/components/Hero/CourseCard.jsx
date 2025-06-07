@@ -1,47 +1,55 @@
-"use client"; // use only for app directory in Next.js 13+
+'use client';
+
+import Image from 'next/image';
 
 export default function CourseCard1() {
   const courses = [
     {
-      category: "Web Design",
-      image: "/webdesign.jpg", // ensure this image exists in /public
-      lessons: 45,
-      duration: "620h 55min",
-      title: "Modern Web Design Aesthetic and Functional Websites",
-      reviews: 32,
-      rating: 3,
-      price: 240,
-    },
-    {
-      category: "Art & Design",
-      image: "/graphic.jpg",
-      lessons: 12,
-      duration: "120h 45min",
-      title: "Graphic Design Essentials From Concept to Creation",
-      reviews: 250,
-      rating: 3,
-      price: 260,
-    },
-    {
-      category: "UI/UX Design",
-      image: "/uiux.jpg",
-      lessons: 4,
-      duration: "120h 45min",
-      title: "UI/UX Design Enhancing User Experience Effectively",
-      reviews: 45,
+      category: 'Pilot Training',
+      image: '/1.png',
+      lessons: 200,
+      duration: '9 Months',
+      title: 'Commercial Pilot License (CPL)',
+      reviews: 120,
       rating: 4,
-      price: 150,
+      price: 4500000, // ₹45,00,000 for King Air C-90 as per document
+    },
+    {
+      category: 'Pilot Training',
+      image: '/2.png',
+      lessons: 40,
+      duration: '3-6 Months',
+      title: 'Private Pilot License (PPL)',
+      reviews: 85,
+      rating: 4,
+      price: 1500000, // Estimated, as PPL cost not explicitly listed
+    },
+    {
+      category: 'Helicopter Training',
+      image: '/3.png',
+      lessons: 150,
+      duration: '9 Months',
+      title: 'Commercial Helicopter Pilot License (CHPL)',
+      reviews: 60,
+      rating: 5,
+      price: 5500000, // ₹55,00,000 as per document
     },
   ];
 
   const CourseCard = ({ category, image, lessons, duration, title, reviews, rating, price }) => {
     return (
       <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full max-w-sm hover:shadow-xl transition">
-        <img src={image} alt={title} className="w-full h-48 object-cover rounded-t-2xl" />
+        <Image
+          src={image}
+          alt={title}
+          width={384}
+          height={192}
+          className="w-full h-48 object-cover rounded-t-2xl"
+        />
         <div className="p-5">
-          <p className="text-sm text-orange-500 font-semibold">{category}</p>
+          <p className="text-sm text-[#00aaff] font-semibold">{category}</p>
           <div className="flex items-center text-sm text-gray-500 mt-1 space-x-3">
-            <p>📘 {lessons} Lesson</p>
+            <p>✈️ {lessons} Flying Hours</p>
             <p>⏰ {duration}</p>
           </div>
           <h3 className="mt-3 text-lg font-bold text-gray-800">{title}</h3>
@@ -50,10 +58,10 @@ export default function CourseCard1() {
             <span className="text-gray-600 text-sm ml-2">{reviews} Reviews</span>
           </div>
           <div className="flex items-center justify-between mt-4">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-700 transition">
+            <button className="bg-[#00aaff] text-white px-4 py-2 rounded-full text-sm hover:bg-[#0088cc] transition">
               Enroll Now
             </button>
-            <span className="text-orange-500 font-bold text-lg">${price}</span>
+            <span className="text-[#00aaff] font-bold text-lg">₹{price.toLocaleString('en-IN')}</span>
           </div>
         </div>
       </div>
@@ -61,10 +69,13 @@ export default function CourseCard1() {
   };
 
   return (
-    <section className="px-5 py-10 md:px-20 bg-gradient-to-b from-white via-purple-50 to-pink-50 min-h-screen">
+    <section className="px-5 py-10 md:px-20 bg-gradient-to-b from-white via-blue-50 to-blue-100 min-h-screen">
       <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        More Than Just A Brand: A Journey Of <span className="text-blue-500 italic">Excellence</span>
+        Fly High with FlyOla: A Journey of <span className="text-[#00aaff] italic">Aviation Excellence</span>
       </h2>
+      <p className="text-center text-gray-600 mb-8">
+        Up to ₹10 Lakh scholarships available for meritorious students!
+      </p>
       <div className="flex flex-wrap justify-center gap-8 mt-10">
         {courses.map((course, idx) => (
           <CourseCard key={idx} {...course} />

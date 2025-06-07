@@ -2,22 +2,22 @@ import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 
 const categories = [
-  { id: '01', name: 'Tech & Programing', count: '10 Course' },
-  { id: '02', name: 'Art & Design', count: '50 Course' },
-  { id: '03', name: 'Online Marketing', count: '12 Course' },
-  { id: '04', name: 'Content Creation', count: '10 Course' },
+  { id: '01', name: 'Commercial Pilot License', count: '200 Flying Hours' },
+  { id: '02', name: 'Private Pilot License', count: '40 Flying Hours' },
+  { id: '03', name: 'Helicopter Pilot Training', count: '150 Flying Hours' },
+  { id: '04', name: 'Cadet Pilot Programme', count: '12-Month Course' },
 ];
 
 export default function CategoriesSection() {
   return (
-    <div className="flex flex-col md:flex-row bg-[#647424] overflow-hidden text-white p-6 md:p-12 relative px-24">
+    <div className="flex flex-col md:flex-row bg-[#647424] overflow-hidden text-white p-6 md:p-12 relative md:px-24">
       {/* Left Column */}
       <div className="flex-1">
-        <div className="mb-6">
-          <span className="text-yellow-400 font-semibold">Category</span>
+       <div className="mb-6">
+          <span className="text-[#00aaff] font-semibold">Training Programs</span>
           <h2 className="text-3xl md:text-5xl font-bold mt-2">
-            Browse Our Categories To <br />
-            Find Exactly <span className="italic text-white">Courses</span>
+            Explore Our Aviation <br />
+            <span className="italic text-blue-500">Courses</span>
           </h2>
         </div>
 
@@ -55,16 +55,22 @@ export default function CategoriesSection() {
       </div>
 
       {/* Right Column */}
-      <div className="relative mt-10 md:mt-0 md:w-[40%] flex justify-center items-center">
-        <div className="relative">
-          <Image
-            src="/category-girl.png"
-            alt="student"
-            width={400}
-            height={400}
-            className="rounded-[2rem]"
-          />
-        </div>
+      <div className="relative  md:w-[40%] flex justify-center items-center mt-24">
+      <div className="relative">
+  <video
+    src="/greeen.mp4" 
+    alt="student video"
+    width={400}
+    height={400}
+    className=""
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
+
+    
       </div>
     </div>
   );

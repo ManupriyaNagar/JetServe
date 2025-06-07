@@ -6,12 +6,12 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Side - Images & Badges */}
-        <div className="flex flex-col items-center gap-6 relative">
-          <div className="relative">
+        <div className="flex flex-col items-center gap-16 relative">
+          <div className="relative ml-20">
             <img
-              src="/images/student1.jpg"
+              src="/about2.png"
               alt="Student"
-              className="rounded-xl w-64"
+               className="rounded-xl w-80 h-32"
             />
             <div className="absolute -top-6 -right-6 bg-white shadow-md px-4 py-2 rounded-lg flex items-center gap-2">
               <span className="text-2xl">🎓</span>
@@ -19,11 +19,11 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative mr-20">
             <img
-              src="/images/student2.jpg"
+              src="/about1.png"
               alt="Student"
-              className="rounded-xl w-64"
+              className="rounded-xl w-80 h-32"
             />
             <div className="absolute -bottom-6 -left-6 bg-white shadow-md px-4 py-2 rounded-lg text-sm font-bold">
               45+ <span className="text-indigo-600 font-normal">Awards Winning</span>
@@ -34,28 +34,26 @@ export default function AboutUs() {
         {/* Right Side - Text Content */}
         <div className="text-black">
           <p className="text-indigo-600 font-semibold mb-2">About Us</p>
-          <h2 className="text-3xl md:text-4xl font-bold leading-snug">
-            Our Story: Built On Values, <br />
-            Driven By <span className="text-indigo-500 italic">Innovation</span>
+           <h2 className="text-3xl md:text-4xl font-bold leading-snug">
+            Our Story: Empowering Pilots, <br />
+            Driven by <span className="text-[#00aaff] italic">Excellence</span>
           </h2>
 
-          <p className="text-gray-600 mt-6 mb-8">
-            We are dedicated to transforming education through digital innovation,
-            making learning more accessible, engaging, and effective for everyone.
-            By integrating cutting-edge technology, we aim to create an inclusive and dynamic learning environment.
+           <p className="text-gray-600 mt-6 mb-8">
+            FlyOla Aviation Academy, a unit of Jet Serve Aviation Pvt. Ltd., is dedicated to transforming aviation training in India. Approved by DGCA, we offer world-class programs with modern aircraft like King Air C-90 & B-200, guiding aspiring pilots to achieve their dreams.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-6">
             <div>
               <h4 className="font-bold text-lg mb-2 flex items-center gap-2">🌟 <span>Our Mission:</span></h4>
-              <p className="text-gray-600 text-sm">
-                To provide innovative digital education solutions that empower learners and educators, fostering a culture to growing your value.
+            <p className="text-gray-600 text-sm">
+                To provide cutting-edge aviation training with state-of-the-art facilities, enabling students to earn their Commercial Pilot License and meet global industry standards.
               </p>
             </div>
             <div>
               <h4 className="font-bold text-lg mb-2 flex items-center gap-2">🚀 <span>Our Vision</span></h4>
               <p className="text-gray-600 text-sm">
-                To provide innovative digital education solutions that empower learners and educators, fostering a culture to growing your value.
+                To empower aspiring pilots to chase their dreams of flying, delivering excellence through DGCA-approved courses and innovative training solutions.
               </p>
             </div>
           </div>
