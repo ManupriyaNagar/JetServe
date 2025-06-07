@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white p-0  z-50">
+    <header className="bg-white p-0 z-50">
       <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center justify-between">
 
         {/* Logo */}
@@ -27,7 +27,6 @@ export default function Header() {
           <a href="#" className="hover:text-blue-600">About</a>
           <button className="hover:text-blue-600">Pages ▼</button>
           <button className="hover:text-blue-600">Course ▼</button>
-          <button className="hover:text-blue-600">Shop ▼</button>
           <button className="hover:text-blue-600">Blog ▼</button>
           <a href="#" className="hover:text-blue-600">Contact</a>
         </nav>

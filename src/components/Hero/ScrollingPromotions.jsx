@@ -19,7 +19,7 @@ export default function ScrollingPromotions() {
       >
         {promotions.map((text, idx) => (
           <span key={idx} className="inline-flex items-center gap-3 mx-6">
-            <span className="text-[#00aaff] text-lg">✈️</span>
+            <span className="text-[#342c74] text-lg">✈️</span>
             {text}
           </span>
         ))}

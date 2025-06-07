@@ -1,5 +1,8 @@
+"use client" 
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 const categories = [
   { id: '01', name: 'Commercial Pilot License', count: '200 Flying Hours' },
@@ -14,10 +17,12 @@ export default function CategoriesSection() {
       {/* Left Column */}
       <div className="flex-1">
        <div className="mb-6">
-          <span className="text-[#00aaff] font-semibold">Training Programs</span>
+        <div className='border-2 bg-transparent w-120 h-10 items-center justify-left flex p-4'>
+          <span className="text-[#342c74] font-semibold text-center">Training Programs</span>
+          </div>
           <h2 className="text-3xl md:text-5xl font-bold mt-2">
             Explore Our Aviation <br />
-            <span className="italic text-blue-500">Courses</span>
+            <span className=" text-[#342c74]">Courses</span>
           </h2>
         </div>
 
@@ -56,19 +61,16 @@ export default function CategoriesSection() {
 
       {/* Right Column */}
       <div className="relative  md:w-[40%] flex justify-center items-center mt-24">
-      <div className="relative">
-  <video
-    src="/greeen.mp4" 
-    alt="student video"
-    width={400}
-    height={400}
-    className=""
-    autoPlay
-    loop
-    muted
-    playsInline
-  />
-</div>
+        
+  
+
+
+    <DotLottieReact
+      src="https://lottie.host/65fa4a87-2c24-4395-b49a-2a85571e6ec8/XHMwZ2k91Z.lottie"
+      loop
+      autoplay
+    />
+
 
     
       </div>
