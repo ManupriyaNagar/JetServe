@@ -3,30 +3,30 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGlobe, FaLinkedinIn, FaPinter
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#0a2640] to-[#1a3555] text-white py-16 px-6 md:px-24">
+    <footer className="bg-[var(--navyblue)] text-white py-16 px-6 md:px-24">
       <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto min-h-[400px]">
 
         {/* Academy Info */}
         <div className="flex flex-col justify-between">
           <div>
-            <h1 className="text-4xl font-extrabold tracking-tight">
-              <span className="text-[#00aaff]">Fly</span>Ola Aviation
+            <h1 className="text-2xl font-extrabold tracking-tight">
+              <span className="text-[white00aaff]">Jet Serve </span>Aviation
             </h1>
             <p className="mt-3 text-sm leading-relaxed opacity-80">
-              Soaring to new heights with DGCA-approved aviation training at FlyOla Aviation Academy.
+              Soaring to new heights with DGCA-approved aviation training at JetServe Aviation Academy.
             </p>
             <div className="mt-6 space-y-4 text-sm">
               <div className="flex items-start">
-                <FaMapMarkerAlt className="text-[#00aaff] mr-3 mt-1" />
+                <FaMapMarkerAlt className="text-[white00aaff] mr-3 mt-1" />
                 <div>
-                  <span className="font-semibold text-[#00aaff]">Head Office:</span>
+                  <span className="font-semibold text-[white00aaff]">Head Office:</span>
                   <br /> Indraprasth Aerospace & Knowledge Park, Sector-77, Delhi-Jaipur NH-08, Gurgaon, Haryana-122004
                 </div>
               </div>
               <div className="flex items-start">
-                <FaMapMarkerAlt className="text-[#00aaff] mr-3 mt-1" />
+                <FaMapMarkerAlt className="text-[white00aaff] mr-3 mt-1" />
                 <div>
-                  <span className="font-semibold text-[#00aaff]">FTO Bases:</span>
+                  <span className="font-semibold text-[white00aaff]">FTO Bases:</span>
                   <br /> Khajuraho Airport: Civil Aerodrome, Khajuraho, M.P.-4671608
                   <br /> Jalgaon Airport: Civil Aerodrome, Jalgaon, MH-425003
                 </div>
@@ -36,18 +36,18 @@ export default function Footer() {
           {/* <div className="mt-8">
             <p className="font-semibold text-lg">Follow Us:</p>
             <div className="flex space-x-4 mt-3">
-              <a href="#" className="bg-[#5865F2] p-3 rounded-full hover:bg-[#4650d1] transition transform hover:scale-105">
+              <white href="white" className="bg-[white5865F2] p-3 rounded-full hover:bg-[white4650d1] transition transform hover:scale-105">
                 <FaLinkedinIn size={18} />
-              </a>
-              <a href="#" className="bg-[#E60023] p-3 rounded-full hover:bg-[#c4001d] transition transform hover:scale-105">
+              </white>
+              <white href="white" className="bg-[whiteE60023] p-3 rounded-full hover:bg-[whitec4001d] transition transform hover:scale-105">
                 <FaPinterestP size={18} />
-              </a>
-              <a href="#" className="bg-[#1877F2] p-3 rounded-full hover:bg-[#1566d1] transition transform hover:scale-105">
+              </white>
+              <white href="white" className="bg-[white1877F2] p-3 rounded-full hover:bg-[white1566d1] transition transform hover:scale-105">
                 <FaFacebookF size={18} />
-              </a>
-              <a href="#" className="bg-[#C13584] p-3 rounded-full hover:bg-[#a12b70] transition transform hover:scale-105">
+              </white>
+              <white href="white" className="bg-[whiteC13584] p-3 rounded-full hover:bg-[whitea12b70] transition transform hover:scale-105">
                 <FaInstagram size={18} />
-              </a>
+              </white>
             </div>
           </div> */}
         </div>
@@ -55,27 +55,27 @@ export default function Footer() {
         {/* Quick Links & Contact */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="text-lg font-semibold text-[#00aaff] mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-[white00aaff] mb-4">Quick Links</h4>
             <ul className="space-y-3 text-sm opacity-80">
-              <li><a href="#" className="hover:text-[#00aaff] transition">Home</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">About Us</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">Courses</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">FAQs</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">Contact</a></li>
+              <li><white  className="hover:text-[white00aaff] transition">Home</white></li>
+              <li><white  className="hover:text-[white00aaff] transition">About Us</white></li>
+              <li><white  className="hover:text-[white00aaff] transition">Courses</white></li>
+              <li><white  className="hover:text-[white00aaff] transition">FAQs</white></li>
+              <li><white  className="hover:text-[white00aaff] transition">Contact</white></li>
             </ul>
             <div className="mt-6 space-y-4 text-sm">
               <div className="flex items-center">
-                <FaEnvelope className="text-[#00aaff] mr-3" />
-                <span className="font-semibold text-[#00aaff]">Email:</span> admissions@flyolaindia.com
+                <FaEnvelope className="text-[white00aaff] mr-3" />
+                <span className="font-semibold text-[white00aaff]">Email:</span> admissions@flyolaindia.com
               </div>
               <div className="flex items-center">
-                <FaPhoneAlt className="text-[#00aaff] mr-3" />
-                <span className="font-semibold text-[#00aaff]">Toll Free:</span> 1800 309 0503
+                <FaPhoneAlt className="text-[white00aaff] mr-3" />
+                <span className="font-semibold text-[white00aaff]">Toll Free:</span> 1800 309 0503
               </div>
               <div className="flex items-center">
-                <FaGlobe className="text-[#00aaff] mr-3" />
-                <span className="font-semibold text-[#00aaff]">Contact</span> 
-                <a href=", +91 9810342422" className="underline hover:text-[#00aaff] transition">www.myflyola.com</a>
+                <FaGlobe className="text-[white00aaff] mr-3" />
+                <span className="font-semibold text-[white00aaff]">Website:</span> 
+                <white href=", +91 9810342422" className="underline hover:text-[white00aaff] transition"> www.myflyola.com</white>
               </div>
             </div>
           </div>
@@ -84,16 +84,16 @@ export default function Footer() {
         {/* Courses & Scholarship */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="text-lg font-semibold text-[#00aaff] mb-4">Our Courses</h4>
+            <h4 className="text-lg font-semibold text-[white00aaff] mb-4">Our Courses</h4>
             <ul className="space-y-3 text-sm opacity-80">
-              <li><a href="#" className="hover:text-[#00aaff] transition">Private Pilot License (PPL)</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">Commercial Pilot License (CPL)</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">Commercial Helicopter Pilot License (CHPL)</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">Multi-Engine Rating</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">Cadet Pilot Programme</a></li>
+              <li><white  className="hover:text-[white00aaff] transition">Private Pilot License (PPL)</white></li>
+              <li><white  className="hover:text-[white00aaff] transition">Commercial Pilot License (CPL)</white></li>
+              <li><white  className="hover:text-[white00aaff] transition">Commercial Helicopter Pilot License (CHPL)</white></li>
+              <li><white  className="hover:text-[white00aaff] transition">Multi-Engine Rating</white></li>
+              <li><white  className="hover:text-[white00aaff] transition">Cadet Pilot Programme</white></li>
             </ul>
             <div className="mt-6">
-              <h4 className="text-lg font-semibold text-[#00aaff] mb-2">Scholarships</h4>
+              <h4 className="text-lg font-semibold text-[white00aaff] mb-2">Scholarships</h4>
               <p className="text-sm opacity-80">
                 Up to ₹10 Lakh scholarships available for meritorious students. Apply now to kickstart your aviation career!
               </p>
@@ -104,23 +104,23 @@ export default function Footer() {
         {/* Newsletter & Vision */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="text-lg font-semibold text-[#00aaff] mb-4">Stay Updated</h4>
+            <h4 className="text-lg font-semibold text-[white00aaff] mb-4">Stay Updated</h4>
             <p className="text-sm opacity-80 mb-3">Subscribe for the latest updates and exclusive offers!</p>
             <div className="flex mt-2">
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="flex-1 px-4 py-3 rounded-l-full bg-[#ffffff1a] border border-[#ffffff33] text-white focus:outline-none focus:ring-2 focus:ring-[#00aaff] transition"
+                className="flex-1 px-4 py-3 rounded-l-full bg-[whiteffffff1a] border border-[whiteffffff33] text-white focus:outline-none focus:ring-2 focus:ring-[white00aaff] transition"
               />
               <button
                 type="button"
-                className="px-6 py-3 bg-[#00aaff] text-white rounded-r-full hover:bg-[#0088cc] transition"
+                className="px-6 py-3 bg-orange-500 text-white rounded-r-full hover:bg-[white0088cc] transition"
               >
                 Subscribe
               </button>
             </div>
             <div className="mt-6">
-              <h4 className="text-lg font-semibold text-[#00aaff] mb-2">Our Vision</h4>
+              <h4 className="text-lg font-semibold text-[white00aaff] mb-2">Our Vision</h4>
               <p className="text-sm opacity-80">
                 "Chase Your Dream Of Flying With FlyOla" – Providing world-class training to empower aspiring pilots.
               </p>

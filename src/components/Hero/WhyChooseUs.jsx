@@ -24,11 +24,12 @@ export default function WhyChooseUs() {
     },
   ];
   return (
-    <section className="py-20 px-5 md:px-20 bg-gradient-to-b from-blue-100 via-blue-50 to-white relative overflow-hidden">
+    <section className="  bg-gradient-to-b from-blue-100 via-blue-50 to-white ">
+    <section className="py-20 px-5  container mx-auto    relative overflow-hidden">
       <h4 className="text-sm text-blue-600 font-semibold mb-1">🎓 Why Choose Us</h4>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 max-w-xl mb-6">
         Built on Trust: Discover Why Our Students{" "}
-        <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text italic underline decoration-blue-400">
+        <span className=" text-[var(--navyblue)]">
           Choose us
         </span>
       </h2>
@@ -47,7 +48,7 @@ export default function WhyChooseUs() {
           <img
             src="/extra10.png"
             alt="Student 2"
-            className="rounded-full w-52 h-52 object-cover absolute -bottom-10 left-1 ring-4 ring-white"
+            className="rounded-full w-52 h-52 object-cover absolute -bottom-10  ring-4 ring-white"
           />
         </div>
 
@@ -68,7 +69,7 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="flex items-center justify-between mt-10">
-            <button className="bg-gradient-to-r from-orange-400 to-pink-500 text-white md:px-6 md:py-2 md:text-sm rounded-full shadow hover:scale-105 transition text-xs py-1  px-1">
+            <button className="bg-[var(--navyblue)] text-white md:px-6 md:py-2 md:text-sm rounded-full shadow hover:scale-105 transition text-xs py-1  px-1">
               » Know More
             </button>
             <div className="flex items-center gap-3 bg-blue-100 md:px-4 md:py-2 px-1 rounded-full">
@@ -82,6 +83,7 @@ export default function WhyChooseUs() {
           </div>
         </div>
       </div>
+    </section>
     </section>
   );
 }

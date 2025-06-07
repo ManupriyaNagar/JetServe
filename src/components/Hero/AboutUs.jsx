@@ -36,7 +36,7 @@ export default function AboutUs() {
           <p className="text-indigo-600 font-semibold mb-2">About Us</p>
            <h2 className="text-3xl md:text-4xl font-bold leading-snug">
             Our Story: Empowering Pilots, <br />
-            Driven by <span className="text-[#00aaff] italic">Excellence</span>
+            Driven by Excellence
           </h2>
 
            <p className="text-gray-600 mt-6 mb-8">
@@ -59,10 +59,15 @@ export default function AboutUs() {
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="bg-indigo-500 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-600 transition">
-              Know More
-            </button>
-            <span className="text-yellow-600 text-xl font-bold">Live Class</span>
+           <button
+  className="navy-blue text-white px-6 py-2 rounded-full shadow hover:bg-indigo-600 transition"
+>
+  Know More
+</button>
+
+          <button class="flex items-center bg-red-600 text-white   py-2 px-4 rounded-full hover:bg-red-700 animate-pulse-custom">
+    <span class="broadcast-icon"></span> LIVE CLASSES
+  </button>
           </div>
         </div>
       </div>
