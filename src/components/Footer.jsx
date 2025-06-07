@@ -64,14 +64,23 @@ export default function Footer() {
               <li><white  className="hover:text-[white00aaff] transition">Contact</white></li>
             </ul>
             <div className="mt-6 space-y-4 text-sm">
-              <div className="flex items-center">
-                <FaEnvelope className="text-[white00aaff] mr-3" />
-                <span className="font-semibold text-[white00aaff]">Email:</span> admissions@flyolaindia.com
-              </div>
-              <div className="flex items-center">
-                <FaPhoneAlt className="text-[white00aaff] mr-3" />
-                <span className="font-semibold text-[white00aaff]">Toll Free:</span> 1800 309 0503
-              </div>
+              
+             <div className="flex items-center">
+  <FaEnvelope className="text-[#00aaff] mr-3" />
+  <span className="font-semibold text-[#00aaff] mr-1">Email:</span>
+  <a href="mailto:admissions@flyolaindia.com" className="text-white hover:underline">
+    admissions@flyolaindia.com
+  </a>
+</div>
+
+<div className="flex items-center mt-2">
+  <FaPhoneAlt className="text-[#00aaff] mr-3" />
+  <span className="font-semibold text-[#00aaff] mr-1">Toll Free:</span>
+  <a href="tel:18003090503" className="text-white hover:underline">
+    1800 309 0503
+  </a>
+</div>
+
               <div className="flex items-center">
                 <FaGlobe className="text-[white00aaff] mr-3" />
                 <span className="font-semibold text-[white00aaff]">Website:</span> 
