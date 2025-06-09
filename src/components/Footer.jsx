@@ -55,16 +55,11 @@ export default function Footer() {
         {/* Quick Links & Contact */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="text-lg font-semibold text-[white00aaff] mb-4">Quick Links</h4>
-            <ul className="space-y-3 text-sm opacity-80">
-              <li><white  className="hover:text-[white00aaff] transition">Home</white></li>
-              <li><white  className="hover:text-[white00aaff] transition">About Us</white></li>
-              <li><white  className="hover:text-[white00aaff] transition">Courses</white></li>
-              <li><white  className="hover:text-[white00aaff] transition">FAQs</white></li>
-              <li><white  className="hover:text-[white00aaff] transition">Contact</white></li>
-            </ul>
+            <h4 className="text-lg font-semibold text-[white00aaff] mb-4">Contact Us</h4>
+       
+           
             <div className="mt-6 space-y-4 text-sm">
-              
+
              <div className="flex items-center">
   <FaEnvelope className="text-[#00aaff] mr-3" />
   <span className="font-semibold text-[#00aaff] mr-1">Email:</span>
@@ -81,11 +76,7 @@ export default function Footer() {
   </a>
 </div>
 
-              <div className="flex items-center">
-                <FaGlobe className="text-[white00aaff] mr-3" />
-                <span className="font-semibold text-[white00aaff]">Website:</span> 
-                <white href=", +91 9810342422" className="underline hover:text-[white00aaff] transition"> www.myflyola.com</white>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -93,15 +84,8 @@ export default function Footer() {
         {/* Courses & Scholarship */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="text-lg font-semibold text-[white00aaff] mb-4">Our Courses</h4>
-            <ul className="space-y-3 text-sm opacity-80">
-              <li><white  className="hover:text-[white00aaff] transition">Private Pilot License (PPL)</white></li>
-              <li><white  className="hover:text-[white00aaff] transition">Commercial Pilot License (CPL)</white></li>
-              <li><white  className="hover:text-[white00aaff] transition">Commercial Helicopter Pilot License (CHPL)</white></li>
-              <li><white  className="hover:text-[white00aaff] transition">Multi-Engine Rating</white></li>
-              <li><white  className="hover:text-[white00aaff] transition">Cadet Pilot Programme</white></li>
-            </ul>
-            <div className="mt-6">
+           
+            <div className="">
               <h4 className="text-lg font-semibold text-[white00aaff] mb-2">Scholarships</h4>
               <p className="text-sm opacity-80">
                 Up to ₹10 Lakh scholarships available for meritorious students. Apply now to kickstart your aviation career!
