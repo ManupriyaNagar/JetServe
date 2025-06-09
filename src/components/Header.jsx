@@ -1,77 +1,75 @@
-
 "use client";
-import { FaSearch, FaShoppingCart, FaThLarge, FaBars } from 'react-icons/fa';
-import { useState } from 'react';
+import { usePathname } from "next/navigation";
+import { FaBars } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  return (
-    <header className="bg-white p-0 z-50">
-      <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center justify-between">
+  const linkClasses = (path) =>
+    `hover:text-blue-600 transition ${
+      pathname === path ? "text-blue-700 font-semibold border-b-2 border-blue-700 pb-1" : ""
+    }`;
 
+  return (
+    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-4">
-          <img src="/JSA.svg" alt="Logo" className="h-24 w-24" />
+        <div className="flex items-center">
+          <img src="/JSA.svg" alt="Logo" className="h-20 w-20 object-contain" />
         </div>
 
-        {/* Navigation Links for Desktop */}
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-800">
-          <div className="group relative">
-            <button className="hover:text-blue-600">Home ▼</button>
-          </div>
-          <a href="#" className="hover:text-blue-600">About</a>
-          <button className="hover:text-blue-600">Pages ▼</button>
-          <button className="hover:text-blue-600">Course ▼</button>
-          <button className="hover:text-blue-600">Blog ▼</button>
-          <a href="#" className="hover:text-blue-600">Contact</a>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-800">
+          <a href="/" className={linkClasses("/")}>
+            Home
+          </a>
+          <a href="/#contact" className={linkClasses("/#contact")}>
+  Contact
+</a>
+
         </nav>
 
-        {/* Right Icons */}
-        <div className="flex items-center space-x-3">
-          <button className="p-2 rounded-full border border-blue-400 text-blue-500 hover:bg-blue-100">
-            <FaSearch />
-          </button>
-          <button className="px-4 py-1 border rounded-md text-blue-600 font-medium hover:bg-blue-100">
-            Login
-          </button>
-          <button className="px-4 py-1 bg-[#342c74] text-white rounded-md font-medium hover:bg-blue-600">
-            Register
-          </button>
-        </div>
-
-        {/* Hamburger Icon for Mobile */}
-        <button onClick={toggleMenu} className="md:hidden p-2 rounded-full border border-gray-600 text-gray-600 hover:bg-gray-100">
+        {/* Mobile Menu Button */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden p-2 rounded-full border border-gray-600 text-gray-600 hover:bg-gray-100"
+        >
           <FaBars />
         </button>
       </div>
 
-      {/* Sidebar / Slide-in Menu for Mobile */}
-      <div className={`fixed inset-0 z-20 bg-black bg-opacity-50  transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="w-3/4 bg-white h-full p-4">
-          <button onClick={toggleMenu} className="absolute top-4 right-4 text-2xl text-gray-600">
+      {/* Mobile Slide-In Menu */}
+      <div
+        className={`fixed inset-0 z-40 bg-black bg-opacity-40 backdrop-blur-sm transition-transform duration-300 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="w-3/4 sm:w-1/2 bg-white h-full p-6 relative">
+          <button
+            onClick={toggleMenu}
+            className="absolute top-4 right-4 text-3xl text-gray-600"
+          >
             &times;
           </button>
-          <nav className="flex flex-col space-y-4 text-lg font-medium text-gray-800">
-            <a href="#" className="hover:text-blue-600">Home</a>
-            <a href="#" className="hover:text-blue-600">About</a>
-            <a href="#" className="hover:text-blue-600">Pages</a>
-            <a href="#" className="hover:text-blue-600">Course</a>
-            <a href="#" className="hover:text-blue-600">Shop</a>
-            <a href="#" className="hover:text-blue-600">Blog</a>
-            <a href="#" className="hover:text-blue-600">Contact</a>
-            <div className="flex items-center space-x-3 mt-6">
-              <button className="p-2 rounded-full border border-blue-400 text-blue-500 hover:bg-blue-100">
-                <FaSearch />
-              </button>
-              <button className="px-4 py-1 border rounded-md text-blue-600 font-medium hover:bg-blue-100">
+
+          <nav className="mt-12 flex flex-col gap-6 text-lg text-gray-800 font-medium">
+            <a href="/" className={linkClasses("/")}>
+              Home
+            </a>
+            <a href="/contact" className={linkClasses("/contact")}>
+              Contact
+            </a>
+            <div className="mt-8 flex flex-col gap-3">
+              <button className="border border-blue-600 text-blue-600 rounded-md py-2 px-4 hover:bg-blue-50">
                 Login
               </button>
-              <button className="px-4 py-1 bg-[#342c74] text-white rounded-md font-medium hover:bg-blue-600">
+              <button className="bg-[#342c74] text-white rounded-md py-2 px-4 hover:bg-indigo-700">
                 Register
               </button>
             </div>

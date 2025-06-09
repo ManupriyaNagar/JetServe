@@ -4,8 +4,8 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function ContactUsSection() {
   return (
-    <section className="py-20 px-5 md:px-20 bg-gradient-to-b from-white via-blue-50 to-blue-100">
-      <h4 className="text-sm text-[#00aaff] font-semibold mb-1">✈️ Get in Touch</h4>
+    <section id="contact" className="py-20 px-5 md:px-20 bg-gradient-to-b from-white via-blue-50 to-blue-100">
+      <h4 className="text-sm text-orange-500 font-semibold mb-1">✈️ Get in Touch</h4>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 max-w-6xl mb-6">
         Connect with FlyOla: Start Your <span className="text-[var(--navyblue)]">Aviation Journey</span>
       </h2>
@@ -17,7 +17,7 @@ export default function ContactUsSection() {
         <div className="w-full lg:w-1/2">
           <div className="space-y-6">
             <div className="flex items-start gap-3">
-              <FaMapMarkerAlt className="text-[#00aaff] mt-1" />
+              <FaMapMarkerAlt className="text-orange-500 mt-1" />
               <div>
                 <h3 className="font-semibold text-gray-800">Head Office</h3>
                 <p className="text-sm text-gray-600">
@@ -26,7 +26,7 @@ export default function ContactUsSection() {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <FaMapMarkerAlt className="text-[#00aaff] mt-1" />
+              <FaMapMarkerAlt className="text-orange-500 mt-1" />
               <div>
                 <h3 className="font-semibold text-gray-800">FTO Bases</h3>
                 <p className="text-sm text-gray-600">
@@ -36,14 +36,14 @@ export default function ContactUsSection() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <FaPhoneAlt className="text-[#00aaff]" />
+              <FaPhoneAlt className="text-orange-500" />
               <div>
                 <h3 className="font-semibold text-gray-800">Phone</h3>
                 <p className="text-sm text-gray-600">1800 309 0503, +91 9810342422</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <FaEnvelope className="text-[#00aaff]" />
+              <FaEnvelope className="text-orange-500" />
               <div>
                 <h3 className="font-semibold text-gray-800">Email</h3>
                 <p className="text-sm text-gray-600">admissions@flyolaindia.com</p>
@@ -70,11 +70,7 @@ export default function ContactUsSection() {
               rows="4"
               className="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00aaff] transition"
             />
-<<<<<<< Updated upstream
-            <button className="bg-[var(--navyblue)] text-white px-6 py-3 rounded-full hover:bg-blue-800 transition w-full">
-=======
             <button className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition w-full">
->>>>>>> Stashed changes
               Submit
             </button>
           </div>

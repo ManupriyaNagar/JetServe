@@ -59,23 +59,15 @@ export default function AboutUs() {
           </div>
 
           <div className="flex items-center gap-4">
-<<<<<<< Updated upstream
-           <button
-  className="navy-blue text-white px-6 py-2 rounded-full shadow hover:bg-indigo-600 transition"
->
-  Know More
-</button>
-
-          <button class="flex items-center bg-red-600 text-white   py-2 px-4 rounded-full hover:bg-red-700 animate-pulse-custom">
-    <span class="broadcast-icon"></span> LIVE CLASSES
+  <button className="bg-orange-500 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-800 transition">
+    Know More
   </button>
-=======
-            <button className="bg-orange-500 text-white px-6 py-2 rounded-full shadow hover:bg-orange-600 transition">
-              Know More
-            </button>
-            {/* <span className="text-yellow-600 text-xl font-bold">Live Class</span> */}
->>>>>>> Stashed changes
-          </div>
+
+  <button className="flex items-center bg-red-600 text-white py-2 px-4 rounded-full hover:bg-red-700 animate-pulse-custom">
+    <span className="broadcast-icon"></span> LIVE CLASSES
+  </button>
+</div>
+
         </div>
       </div>
     </section>

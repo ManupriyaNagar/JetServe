@@ -90,7 +90,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="py-10 relative overflow-hidden bg-[url('/bacground.gif')] bg-no-repeat bg-cover bg-center z-10">
+    <section className="py-8 relative overflow-hidden bg-[url('/bacground.gif')] bg-no-repeat bg-cover bg-center z-10 mt-26">
       <div className="absolute inset-0 bg-[#0a2640]/50 -z-10" />
       <section className="-mt-10 z-30">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">

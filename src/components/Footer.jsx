@@ -5,22 +5,22 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--navyblue)] text-white py-16 px-6 md:px-24">
       <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto min-h-[400px]">
-s
+
         {/* Academy Info */}
         <div className="flex flex-col justify-between">
           <div>
             <h1 className="text-4xl font-extrabold tracking-tight">
-              <span className="text-[#00aaff]">Fly</span>Ola Aviation
+              <span className="text-orange-500">Fly</span>Ola Aviation
             </h1>
             <p className="mt-3 text-sm leading-relaxed opacity-80">
               Soaring to new heights with DGCA-approved aviation training at FlyOla Aviation Academy.
             </p>
             <div className="mt-6 space-y-4 text-sm">
               <div className="flex items-start">
-                <FaMapMarkerAlt className="text-[#342c74] mr-3 mt-1" />
+              <FaMapMarkerAlt className="text-[white00aaff] mr-3 mt-1" />
                 <div>
                   <span className="font-semibold text-[white00aaff]">Head Office:</span>
-                  <br /> Indraprasth Aerospace & Knowledge Park, Sector-77, Delhi-Jaipur NH-08, Gurgaon, Haryana-122004
+                  <br /> Indraprasth Aerospace & Knowledge <br /> Park, Sector-77, Delhi-Jaipur NH-08, Gurgaon, Haryana-122004
                 </div>
               </div>
               <div className="flex items-start">
@@ -33,29 +33,13 @@ s
               </div>
             </div>
           </div>
-          {/* <div className="mt-8">
-            <p className="font-semibold text-lg">Follow Us:</p>
-            <div className="flex space-x-4 mt-3">
-              <white href="white" className="bg-[white5865F2] p-3 rounded-full hover:bg-[white4650d1] transition transform hover:scale-105">
-                <FaLinkedinIn size={18} />
-              </white>
-              <white href="white" className="bg-[whiteE60023] p-3 rounded-full hover:bg-[whitec4001d] transition transform hover:scale-105">
-                <FaPinterestP size={18} />
-              </white>
-              <white href="white" className="bg-[white1877F2] p-3 rounded-full hover:bg-[white1566d1] transition transform hover:scale-105">
-                <FaFacebookF size={18} />
-              </white>
-              <white href="white" className="bg-[whiteC13584] p-3 rounded-full hover:bg-[whitea12b70] transition transform hover:scale-105">
-                <FaInstagram size={18} />
-              </white>
-            </div>
-          </div> */}
+          
         </div>
 
         {/* Quick Links & Contact */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="text-lg font-semibold text-[#00aaff] mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-orange-500 mb-4">Quick Links</h4>
             <ul className="space-y-3 text-sm opacity-80">
               <li><a href="#" className="hover:text-[#00aaff] transition">Home</a></li>
               <li><a href="#" className="hover:text-[#00aaff] transition">About Us</a></li>
@@ -66,16 +50,16 @@ s
             <div className="mt-6 space-y-4 text-sm">
 
              <div className="flex items-center">
-  <FaEnvelope className="text-[#00aaff] mr-3" />
-  <span className="font-semibold text-[#00aaff] mr-1">Email:</span>
+  <FaEnvelope className="text-orange-500 mr-3" />
+  <span className="font-semibold text-orange-500 mr-1">Email:</span>
   <a href="mailto:admissions@flyolaindia.com" className="text-white hover:underline">
     admissions@flyolaindia.com
   </a>
 </div>
 
 <div className="flex items-center mt-2">
-  <FaPhoneAlt className="text-[#00aaff] mr-3" />
-  <span className="font-semibold text-[#00aaff] mr-1">Toll Free:</span>
+  <FaPhoneAlt className="text-orange-500 mr-3" />
+  <span className="font-semibold text-orange-500 mr-1">Toll Free:</span>
   <a href="tel:18003090503" className="text-white hover:underline">
     1800 309 0503
   </a>
