@@ -5,19 +5,19 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--navyblue)] text-white py-16 px-6 md:px-24">
       <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto min-h-[400px]">
-
+s
         {/* Academy Info */}
         <div className="flex flex-col justify-between">
           <div>
-            <h1 className="text-2xl font-extrabold tracking-tight">
-              <span className="text-[white00aaff]">Jet Serve </span>Aviation
+            <h1 className="text-4xl font-extrabold tracking-tight">
+              <span className="text-[#00aaff]">Fly</span>Ola Aviation
             </h1>
             <p className="mt-3 text-sm leading-relaxed opacity-80">
-              Soaring to new heights with DGCA-approved aviation training at JetServe Aviation Academy.
+              Soaring to new heights with DGCA-approved aviation training at FlyOla Aviation Academy.
             </p>
             <div className="mt-6 space-y-4 text-sm">
               <div className="flex items-start">
-                <FaMapMarkerAlt className="text-[white00aaff] mr-3 mt-1" />
+                <FaMapMarkerAlt className="text-[#342c74] mr-3 mt-1" />
                 <div>
                   <span className="font-semibold text-[white00aaff]">Head Office:</span>
                   <br /> Indraprasth Aerospace & Knowledge Park, Sector-77, Delhi-Jaipur NH-08, Gurgaon, Haryana-122004
@@ -55,9 +55,14 @@ export default function Footer() {
         {/* Quick Links & Contact */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="text-lg font-semibold text-[white00aaff] mb-4">Contact Us</h4>
-       
-           
+            <h4 className="text-lg font-semibold text-[#00aaff] mb-4">Quick Links</h4>
+            <ul className="space-y-3 text-sm opacity-80">
+              <li><a href="#" className="hover:text-[#00aaff] transition">Home</a></li>
+              <li><a href="#" className="hover:text-[#00aaff] transition">About Us</a></li>
+              <li><a href="#" className="hover:text-[#00aaff] transition">Courses</a></li>
+              <li><a href="#" className="hover:text-[#00aaff] transition">FAQs</a></li>
+              <li><a href="#" className="hover:text-[#00aaff] transition">Contact</a></li>
+            </ul>
             <div className="mt-6 space-y-4 text-sm">
 
              <div className="flex items-center">

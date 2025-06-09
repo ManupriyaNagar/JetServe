@@ -61,11 +61,18 @@ export default function CourseCard1() {
             <span className="text-gray-600 text-sm ml-2">{reviews} Reviews</span>
           </div>
           <div className="flex items-center justify-between mt-4">
+<<<<<<< Updated upstream
              <button onClick={() => setShowModal(true)} className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full shadow-md flex items-center gap-2 z-20">
                             <BsStars />
                             Enroll Now
                           </button>
             <span className="text-[var(--navyblue)] font-bold text-lg">₹{price.toLocaleString('en-IN')}</span>
+=======
+            <button className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition">
+              Enroll Now
+            </button>
+            <span className="text-[#342c74] font-bold text-lg">₹{price.toLocaleString('en-IN')}</span>
+>>>>>>> Stashed changes
           </div>
         </div>
       </div>

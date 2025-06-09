@@ -17,7 +17,7 @@ export default function CategoriesSection() {
       {/* Left Column */}
       <div className="flex-1">
        <div className="mb-6">
-        <div className='border-2 bg-transparent w-120 h-10 items-center justify-left flex p-4'>
+        <div className='border-2 bg-white w-120 h-10 items-center justify-left flex p-4'>
           <span className="text-[#342c74] font-semibold text-center">Training Programs</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold mt-2">

@@ -70,7 +70,11 @@ export default function ContactUsSection() {
               rows="4"
               className="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00aaff] transition"
             />
+<<<<<<< Updated upstream
             <button className="bg-[var(--navyblue)] text-white px-6 py-3 rounded-full hover:bg-blue-800 transition w-full">
+=======
+            <button className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition w-full">
+>>>>>>> Stashed changes
               Submit
             </button>
           </div>

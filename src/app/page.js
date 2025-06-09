@@ -15,6 +15,7 @@ export default function Home() {
     <HeroSection/>
     <ScrollingFeatures/>
     <CategoriesSection/>
+    
     <AboutUs/>
     <CourseCard1/>
     <WhyChooseUs/>

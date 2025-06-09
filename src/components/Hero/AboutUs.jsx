@@ -11,7 +11,7 @@ export default function AboutUs() {
             <img
               src="/about2.png"
               alt="Student"
-               className="rounded-xl w-80 h-32"
+               className="rounded-xl w-96 h-48"
             />
             <div className="absolute -top-6 -right-6 bg-white shadow-md px-4 py-2 rounded-lg flex items-center gap-2">
               <span className="text-2xl">🎓</span>
@@ -23,7 +23,7 @@ export default function AboutUs() {
             <img
               src="/about1.png"
               alt="Student"
-              className="rounded-xl w-80 h-32"
+              className="rounded-xl w-96 h-48"
             />
             <div className="absolute -bottom-6 -left-6 bg-white shadow-md px-4 py-2 rounded-lg text-sm font-bold">
               45+ <span className="text-indigo-600 font-normal">Awards Winning</span>
@@ -59,6 +59,7 @@ export default function AboutUs() {
           </div>
 
           <div className="flex items-center gap-4">
+<<<<<<< Updated upstream
            <button
   className="navy-blue text-white px-6 py-2 rounded-full shadow hover:bg-indigo-600 transition"
 >
@@ -68,6 +69,12 @@ export default function AboutUs() {
           <button class="flex items-center bg-red-600 text-white   py-2 px-4 rounded-full hover:bg-red-700 animate-pulse-custom">
     <span class="broadcast-icon"></span> LIVE CLASSES
   </button>
+=======
+            <button className="bg-orange-500 text-white px-6 py-2 rounded-full shadow hover:bg-orange-600 transition">
+              Know More
+            </button>
+            {/* <span className="text-yellow-600 text-xl font-bold">Live Class</span> */}
+>>>>>>> Stashed changes
           </div>
         </div>
       </div>
