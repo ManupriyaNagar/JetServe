@@ -24,9 +24,9 @@ export default function WhyChooseUs() {
     },
   ];
   return (
-    <section className="  bg-gradient-to-b from-blue-100 via-blue-50 to-white ">
-    <section className="py-20 px-5  container mx-auto    relative overflow-hidden">
-      <h4 className="text-sm text-blue-600 font-semibold mb-1">🎓 Why Choose Us</h4>
+    <section className="bg-gradient-to-b from-blue-100 via-blue-50 to-white px-28">
+    <section className="py-20 px-4 container mx-auto relative overflow-hidden">
+      <h4 className="text-sm text-[#342c74] font-semibold mb-1">🎓 Why Choose Us</h4>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 max-w-xl mb-6">
         Built on Trust: Discover Why Our Students{" "}
         <span className=" text-[var(--navyblue)]">
@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         </span>
       </h2>
       <p className="max-w-2xl text-gray-600 mb-6">
-        FlyOla Aviation Academy offers world-class aviation training, empowering aspiring pilots with DGCA-approved courses, modern aircraft, and expert guidance to soar to new heights.
+        Jet Serve Aviation Academy offers world-class aviation training, empowering aspiring pilots with DGCA-approved courses, modern aircraft, and expert guidance to soar to new heights.
       </p>
 
       <div className="flex flex-col-reverse lg:flex-row gap-10 items-center">

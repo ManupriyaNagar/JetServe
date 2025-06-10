@@ -20,6 +20,26 @@
 .navy-blue {
   background-color: var(--navyblue);
 }
+.vertical-lines-bg {
+  background-color: #647424; /* Your desired base color */
+  background-image: repeating-linear-gradient(
+    120deg,
+    rgba(255, 225, 255, 0.08),
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 1px,
+    transparent 10px
+  );
+}
+
+.page-container {
+  max-width: 1280px;           /* Adjust as per your design needs */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;          /* 16px padding left */
+  padding-right: 1rem;         /* 16px padding right */
+}
+
+
 
 
 

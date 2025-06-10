@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "FlyOla Aviation Academy",
+  title: "JetServe Aviation Academy",
   keywords: [
     "FlyOla",
     "Aviation Academy",
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/JSA.svg" type="image/svg+xml" />
       </head>
-      <body>
+      <body className="">
         <Header />
         {children}
         <Footer />

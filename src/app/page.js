@@ -7,6 +7,8 @@ import ScrollingFeatures from "@/components/Hero/ScrollingFeature";
 import ScrollingPromotions from "@/components/Hero/ScrollingPromotions";
 import TestimonialsSection from "@/components/Hero/TestimonialsSection";
 import WhyChooseUs from "@/components/Hero/WhyChooseUs";
+import AcademyCard from '@/components/Hero/AcademyCard';
+import CHPLCadetProgram from '@/components/Hero/CHPLCadetProgram';
 import Image from "next/image";
 
 export default function Home() {
@@ -15,11 +17,12 @@ export default function Home() {
     <HeroSection/>
     <ScrollingFeatures/>
     <CategoriesSection/>
-    
     <AboutUs/>
     <CourseCard1/>
     <WhyChooseUs/>
+    <AcademyCard/>
     <TestimonialsSection/>
+    <CHPLCadetProgram/>
     <ScrollingPromotions/>
     <ContactUsSection/>
 

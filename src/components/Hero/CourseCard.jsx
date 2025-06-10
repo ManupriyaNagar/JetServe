@@ -123,7 +123,8 @@ export default function CourseCard1() {
 
   const CourseCard = ({ category, image, lessons, duration, title, reviews, rating, price }) => {
     return (
-      <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full max-w-sm hover:shadow-xl transition">
+      
+      <div className=" bg-white rounded-2xl shadow-md overflow-hidden w-full max-w-sm hover:shadow-xl transition">
         <Image
           src={image}
           alt={title}
@@ -158,7 +159,8 @@ export default function CourseCard1() {
   };
 
   return (
-    <section className="px-5 py-10 md:px-20 bg-gradient-to-b from-white via-blue-50 to-blue-100 ">
+    <section className='bg-gradient-to-b from-white via-blue-50 to-blue-100 '>
+    <div className="page-container bg-gradient-to-b from-white via-blue-50 to-blue-100  ">
       <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-4">
 
 
@@ -265,6 +267,7 @@ export default function CourseCard1() {
     </div>
     
       )}
+    </div>
     </section>
   );
 }

@@ -4,13 +4,15 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function ContactUsSection() {
   return (
-    <section id="contact" className="py-20 px-5 md:px-20 bg-gradient-to-b from-white via-blue-50 to-blue-100">
+    <section className='bg-gradient-to-b from-white via-blue-50 to-blue-100'>
+    <div id="contact" className="page-container  ">
+      <div className='container mx-auto py-20 px-5 md:px-10'>
       <h4 className="text-sm text-orange-500 font-semibold mb-1">✈️ Get in Touch</h4>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 max-w-6xl mb-6">
-        Connect with FlyOla: Start Your <span className="text-[var(--navyblue)]">Aviation Journey</span>
+        Connect with Jet Serve: Start Your <span className="text-[var(--navyblue)]">Aviation Journey</span>
       </h2>
       <p className=" text-gray-600 mb-12">
-        Reach out to FlyOla Aviation Academy for inquiries, admissions, or to visit our training facilities. We’re here to guide you every step of the way!
+        Reach out to Jet Serve Aviation Academy for inquiries, admissions, or to visit our training facilities. We’re here to guide you every step of the way!
       </p>
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Left - Contact Info */}
@@ -76,6 +78,8 @@ export default function ContactUsSection() {
           </div>
         </div>
       </div>
+      </div>
+    </div>
     </section>
   );
 }

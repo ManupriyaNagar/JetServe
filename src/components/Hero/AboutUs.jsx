@@ -2,8 +2,8 @@
 
 export default function AboutUs() {
   return (
-    <section className="bg-white py-16 px-4 lg:px-24 relative">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="bg-white py-16 relative page-container">
+      <div className=" grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Side - Images & Badges */}
         <div className="flex flex-col items-center gap-16 relative">
@@ -40,7 +40,7 @@ export default function AboutUs() {
           </h2>
 
            <p className="text-gray-600 mt-6 mb-8">
-            FlyOla Aviation Academy, a unit of Jet Serve Aviation Pvt. Ltd., is dedicated to transforming aviation training in India. Approved by DGCA, we offer world-class programs with modern aircraft like King Air C-90 & B-200, guiding aspiring pilots to achieve their dreams.
+            Jet Serve Aviation Academy, a unit of Jet Serve Aviation Pvt. Ltd., is dedicated to transforming aviation training in India. Approved by DGCA, we offer world-class programs with modern aircraft like King Air C-90 & B-200, guiding aspiring pilots to achieve their dreams.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-6">

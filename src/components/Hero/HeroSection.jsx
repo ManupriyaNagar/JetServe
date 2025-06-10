@@ -91,13 +91,16 @@ export default function HeroSection() {
 
   return (
     <section className="py-8 relative overflow-hidden bg-[url('/bacground.gif')] bg-no-repeat bg-cover bg-center z-10 mt-26">
+    <div className="page-container ">
       <div className="absolute inset-0 bg-[#0a2640]/50 -z-10" />
       <section className="-mt-10 z-30">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
           <div className="max-w-xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              Choose Your Dream <br />
-              of Flying<span className=""> With</span><br />
+              <span className=' text-5xl p-3 mr-3'>Choose Your Dream <br />
+              <span className='ml-2'>
+              of Flying</span><span className="p-3"> With</span><br /></span>
+              
               <span className=" decoration-4">Jet Serve Aviation Academy</span>
             </h1>
             <p className="text-gray-100 mt-4 z-20">
@@ -240,6 +243,7 @@ export default function HeroSection() {
     </div>
     
       )}
+    </div>
     </section>
   );
 }

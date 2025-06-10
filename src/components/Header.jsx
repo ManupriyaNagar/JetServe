@@ -17,8 +17,8 @@ export default function Header() {
     }`;
 
   return (
-    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <header className="bg-white fixed top-0 left-0 right-0 z-50 ">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between page-container">
         {/* Logo */}
         <div className="flex items-center">
           <img src="/JSA.svg" alt="Logo" className="h-20 w-20 object-contain" />

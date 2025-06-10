@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-orange-500">Fly</span>Ola Aviation
             </h1>
             <p className="mt-3 text-sm leading-relaxed opacity-80">
-              Soaring to new heights with DGCA-approved aviation training at FlyOla Aviation Academy.
+              Soaring to new heights with DGCA-approved aviation training at Jet Serve Aviation Academy.
             </p>
             <div className="mt-6 space-y-4 text-sm">
               <div className="flex items-start">
@@ -61,7 +61,7 @@ export default function Footer() {
   <FaPhoneAlt className="text-orange-500 mr-3" />
   <span className="font-semibold text-orange-500 mr-1">Toll Free:</span>
   <a href="tel:18003090503" className="text-white hover:underline">
-    1800 309 0503
+  01169261857
   </a>
 </div>
 
@@ -104,7 +104,7 @@ export default function Footer() {
             <div className="mt-6">
               <h4 className="text-lg font-semibold text-[white00aaff] mb-2">Our Vision</h4>
               <p className="text-sm opacity-80">
-                "Chase Your Dream Of Flying With FlyOla" – Providing world-class training to empower aspiring pilots.
+                "Chase Your Dream Of Flying With Jet Serve" – Providing world-class training to empower aspiring pilots.
               </p>
             </div>
           </div>
