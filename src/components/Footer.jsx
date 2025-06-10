@@ -39,14 +39,7 @@ export default function Footer() {
         {/* Quick Links & Contact */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="text-lg font-semibold text-orange-500 mb-4">Quick Links</h4>
-            <ul className="space-y-3 text-sm opacity-80">
-              <li><a href="#" className="hover:text-[#00aaff] transition">Home</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">About Us</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">Courses</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">FAQs</a></li>
-              <li><a href="#" className="hover:text-[#00aaff] transition">Contact</a></li>
-            </ul>
+            
             <div className="mt-6 space-y-4 text-sm">
 
              <div className="flex items-center">
