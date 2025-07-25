@@ -13,7 +13,7 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section className='bg-[#141c4c]'>
+    <section id="courses" className='bg-[#141c4c] '>
     <div className="page-container flex flex-col md:flex-row overflow-hidden text-white p-6 md:p-12 relative m">
       {/* Left Column */}
       <div className="flex-1">

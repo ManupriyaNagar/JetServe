@@ -9,18 +9,33 @@ export default function Header() {
 
   const toggleMenu = () => setIsOpen(prev => !prev);
 
+  const scrollLinks = [
+    { name: "Our Courses", href: "#courses" },
+    { name: "About Us", href: "#about" },
+    { name: "Why Choose Us", href: "#why" },
+    { name: "Latest Updates", href: "#updates" },
+  ];
+
   return (
     <header className="bg-white fixed top-0 left-0 right-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between page-container">
         {/* Logo */}
         <div className="flex items-center">
-          {/* <img src="/commercial-pilot-license/JSA.svg" alt="Logo" className="h-20 w-20 object-contain" /> */}
-          <img src="image.png" alt="" className="h-20 w-40 object-contain"/>
+          <img src="image.png" alt="Logo" className="h-20 w-40 object-contain" />
         </div>
 
-
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-800">
+        <nav className="hidden md:flex items-center space-x-6 text-md gap-4 font-medium text-gray-800">
+          {scrollLinks.map(link => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="hover:text-blue-600 transition"
+            >
+              {link.name}
+            </a>
+          ))}
+
           <a
             href="tel:18003090503"
             className="flex items-center space-x-2 px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-shadow shadow-sm"
@@ -63,6 +78,17 @@ export default function Header() {
           </button>
 
           <nav className="mt-12 flex flex-col gap-6">
+            {scrollLinks.map(link => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={toggleMenu}
+                className="text-gray-800 text-base font-medium hover:text-blue-600 transition"
+              >
+                {link.name}
+              </a>
+            ))}
+
             <a
               href="tel:18003090503"
               className="flex items-center gap-3 px-5 py-3 rounded-lg bg-blue-50 text-blue-700 font-semibold hover:bg-blue-100 transition-shadow shadow"
@@ -81,5 +107,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-);
+  );
 }

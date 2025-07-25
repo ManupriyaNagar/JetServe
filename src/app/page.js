@@ -12,6 +12,7 @@ import CHPLCadetProgram from '@/components/Hero/CHPLCadetProgram';
 import Image from "next/image";
 import SuccessMarquee from "@/components/Hero/SuccessMarquee";
 import InstagramTestimonials from "@/components/Hero/InstaTesti";
+import VideoSection from "@/components/Hero/VideoSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
     <ScrollingFeatures/>
     <CategoriesSection/>
     <SuccessMarquee/>
+    <VideoSection/>
     <AboutUs/>
     <CourseCard1/>
     <WhyChooseUs/>
@@ -28,6 +30,7 @@ export default function Home() {
     <CHPLCadetProgram/>
     <ScrollingPromotions/>
     <InstagramTestimonials/>
+
     <ContactUsSection/>
 
 

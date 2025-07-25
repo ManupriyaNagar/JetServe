@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
     },
   ];
   return (
-    <section className="bg-gradient-to-b from-blue-100 via-blue-50 to-white px-28">
+    <section id="why" className="bg-gradient-to-b from-blue-100 via-blue-50 to-white px-28">
     <section className="py-20 px-4 container mx-auto relative overflow-hidden">
       <h4 className="text-sm text-[#342c74] font-semibold mb-1">🎓 Why Choose Us</h4>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 max-w-xl mb-6">

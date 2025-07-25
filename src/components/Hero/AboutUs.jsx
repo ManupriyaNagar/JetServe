@@ -2,7 +2,7 @@
 
 export default function AboutUs() {
   return (
-    <section className="bg-white py-16 relative page-container">
+    <section id="about" className="bg-white py-16 relative page-container">
       <div className=" grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Side - Images & Badges */}
@@ -23,7 +23,7 @@ export default function AboutUs() {
             <img
               src="/commercial-pilot-license/about1.png"
               alt="Student"
-              className="rounded-xl w-96 h-48"
+              className="rounded-xl w-[60vh] h-auto object-cover"
             />
             <div className="absolute -bottom-6 -left-6 bg-white shadow-md px-4 py-2 rounded-lg text-sm font-bold">
               45+ <span className="text-indigo-600 font-normal">Awards Winning</span>

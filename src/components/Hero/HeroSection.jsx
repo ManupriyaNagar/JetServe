@@ -143,7 +143,7 @@ export default function HeroSection() {
                 height={500}
                 className="rounded-lg mr-20 -mb-8"
               />
-              <div className="absolute top-4 right-0 bg-white shadow-lg px-4 py-2 rounded-xl text-center z-20">
+              <div className="absolute bottom-80  -left-10 bg-white shadow-lg px-6 py-6 rounded-xl text-center z-20">
                 <div className="flex justify-center space-x-1 mb-1">
                   <img src="/commercial-pilot-license/about1.png" alt="Student" width={120} height={52} className="rounded-full" />
                 </div>

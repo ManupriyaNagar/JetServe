@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col justify-between">
           <div>
             <h1 className="text-4xl font-extrabold tracking-tight">
-              <span className="text-orange-500">Fly</span>Ola Aviation
+              <span className="">Fly</span>Ola Aviation
             </h1>
             <p className="mt-3 text-sm leading-relaxed opacity-80">
               Soaring to new heights with DGCA-approved aviation training at Jet Serve Aviation Academy.

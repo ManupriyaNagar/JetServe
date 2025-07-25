@@ -16,7 +16,7 @@ export default function InstagramTestimonials() {
   }, []);
 
   return (
-    <section className="bg-white py-10 px-4 h-screen">
+    <section id='updates' className="bg-white py-10 px-4 h-screen">
       {/* Marquee Fast Tag / Heading */}
       <div className="overflow-hidden whitespace-nowrap mb-6">
         <h1 className="text-5xl text-center font-bold text-gray-800">
@@ -29,17 +29,10 @@ export default function InstagramTestimonials() {
         className="max-w-6xl mx-auto rounded-lg shadow-md overflow-hidden h-full"
         ref={containerRef}
       >
-        <iframe
-          src="https://widget.taggbox.com/293894?website=1"
-          style={{
-            width: '100%',
-            height: '100%',
-            overflow: 'auto',
-            border: 'none',
-          }}
-          title="Instagram Testimonials"
-          loading="lazy"
-        />
+        <iframe src="https://widget.taggbox.com/293894?website=1"  style={{width:"100%",
+    height:"100%",
+    overflow:"auto",
+    border:"none"}}></iframe>
       </div>
     </section>
   );
