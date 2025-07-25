@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGlobe, FaLinkedinIn, FaPinter
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--navyblue)] text-white py-16 px-6 md:px-24">
+    <footer className="bg-[#141c4c] text-white py-16 px-6 md:px-24">
       <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto min-h-[400px]">
 
         {/* Academy Info */}

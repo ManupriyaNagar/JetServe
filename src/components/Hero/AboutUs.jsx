@@ -9,7 +9,7 @@ export default function AboutUs() {
         <div className="flex flex-col items-center gap-16 relative">
           <div className="relative ml-20">
             <img
-              src="/about2.png"
+              src="/commercial-pilot-license/about2.png"
               alt="Student"
                className="rounded-xl w-96 h-48"
             />
@@ -21,7 +21,7 @@ export default function AboutUs() {
 
           <div className="relative mr-20">
             <img
-              src="/about1.png"
+              src="/commercial-pilot-license/about1.png"
               alt="Student"
               className="rounded-xl w-96 h-48"
             />

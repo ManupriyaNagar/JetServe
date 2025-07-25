@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { FaHelicopter, FaPlane } from 'react-icons/fa';
 import { BsStars } from 'react-icons/bs';
 
@@ -14,6 +13,13 @@ export default function HeroSection() {
     course: 'Commercial Pilot License',
   });
   const [enquiries, setEnquiries] = useState([]);
+  const [captchaUserInput, setCaptchaUserInput] = useState('');
+  const [captchaError, setCaptchaError] = useState('');
+  const [captchaValue, setCaptchaValue] = useState(generateCaptcha());
+
+  function generateCaptcha() {
+    return Math.floor(100000 + Math.random() * 900000).toString(); // Generate 6-digit number
+  }
 
   useEffect(() => {
     const fetchEnquiries = async () => {
@@ -39,6 +45,14 @@ export default function HeroSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setCaptchaError('');
+
+    // Validate CAPTCHA
+    if (captchaUserInput.trim() !== captchaValue) {
+      setCaptchaError('Incorrect CAPTCHA. Please try again.');
+      setCaptchaValue(generateCaptcha()); // Regenerate new CAPTCHA on failure
+      return;
+    }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\d{10}$/;
@@ -74,8 +88,9 @@ export default function HeroSection() {
           email: '',
           course: 'Commercial Pilot License',
         });
+        setCaptchaUserInput('');
+        setCaptchaValue(generateCaptcha()); // Regenerate after success
         setShowModal(false);
-        // Refresh enquiries
         const response = await fetch('https://flyolaindia.com/backend/api/enquiry');
         const updatedData = await response.json();
         if (updatedData.success) {
@@ -89,161 +104,181 @@ export default function HeroSection() {
     }
   };
 
+  const refreshCaptcha = () => {
+    setCaptchaValue(generateCaptcha());
+  };
+
   return (
     <section className="py-8 relative overflow-hidden bg-[url('/bacground.gif')] bg-no-repeat bg-cover bg-center z-10 mt-26">
-    <div className="page-container ">
-      <div className="absolute inset-0 bg-[#0a2640]/50 -z-10" />
-      <section className="-mt-10 z-30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-          <div className="max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              <span className=' text-5xl p-3 mr-3'>Choose Your Dream <br />
-              <span className='ml-2'>
-              of Flying</span><span className="p-3"> With</span><br /></span>
-              
-              <span className=" decoration-4">Jet Serve Aviation Academy</span>
-            </h1>
-            <p className="text-gray-100 mt-4 z-20">
-              Jet Serve Aviation Academy offers DGCA-approved CPL & CHPL training with expert instructors, modern aircraft, and strong placement support.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-4">
-              <button onClick={() => setShowModal(true)} className="bg-white border font-medium px-6 py-2 rounded-full text-gray-700 shadow flex items-center gap-2">
-                <FaHelicopter className="text-blue-600 z-20" />
-                CPL
-              </button>
-              <button onClick={() => setShowModal(true)} className="bg-white border font-medium px-6 py-2 rounded-full text-gray-700 shadow flex items-center gap-2">
-                <FaPlane className="text-blue-600 z-20" />
-                CHPL
-              </button>
-              <button onClick={() => setShowModal(true)} className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full shadow-md flex items-center gap-2 z-20">
-                <BsStars />
-                Enroll Now
-              </button>
+      <div className="page-container ">
+        <div className="absolute inset-0 bg-[#0a2640]/50 -z-10" />
+        <section className="-mt-10 z-30">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+            <div className="max-w-xl">
+              <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                <span className=' text-5xl p-3 mr-3'>Choose Your Dream <br />
+                  <span className='ml-2'>
+                    of Flying</span><span className="p-3"> With</span><br /></span>
+                <span className=" decoration-4">Jet Serve Aviation Academy</span>
+              </h1>
+              <p className="text-gray-100 mt-4 z-20">
+                Jet Serve Aviation Academy offers DGCA-approved CPL training with expert instructors, modern aircraft, and strong placement support.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <button onClick={() => setShowModal(true)} className="bg-white border font-medium px-6 py-2 rounded-full text-gray-700 shadow flex items-center gap-2">
+                  <FaPlane className="text-blue-600 z-20" />
+                  CPL
+                </button>
+                <button onClick={() => setShowModal(true)} className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full shadow-md flex items-center gap-2 z-20">
+                  <BsStars />
+                  Enroll Now
+                </button>
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="/commercial-pilot-license/pilot.png"
+                alt="Student"
+                width={500}
+                height={500}
+                className="rounded-lg mr-20 -mb-8"
+              />
+              <div className="absolute top-4 right-0 bg-white shadow-lg px-4 py-2 rounded-xl text-center z-20">
+                <div className="flex justify-center space-x-1 mb-1">
+                  <img src="/commercial-pilot-license/about1.png" alt="Student" width={120} height={52} className="rounded-full" />
+                </div>
+                <p className="text-blue-600 font-bold text-lg">CPL</p>
+                <p className="text-sm text-gray-700">Commercial Pilot License</p>
+              </div>
             </div>
           </div>
-          <div className="relative">
-            <Image
-              src="/pilot.png"
-              alt="Student"
-              width={500}
-              height={500}
-              className="rounded-lg mr-20 -mb-8"
-            />
-            <div className="absolute top-4 right-0 bg-white shadow-lg px-4 py-2 rounded-xl text-center z-20 
-   ">
-  <div className="flex justify-center space-x-1 mb-1">
-    <Image src="/about1.png" alt="Student" width={120} height={52} className="rounded-full" />
-  </div>
-  <p className="text-blue-600 font-bold text-lg">CPL</p>
-  <p className="text-sm text-gray-700">Commercial Pilot License</p>
-</div>
+        </section>
 
-<div className="absolute bottom-14 left-0 bg-white shadow-lg px-4 py-2 rounded-xl text-center z-20 animate-[float_3s_ease-in-out_infinite]">
-            <div className="flex justify-center space-x-1 mb-1">
-              <Image src="/about2.png" alt="Student" width={124} height={24} className="rounded-full" />
-              {/* <Image src="/student2.jpg" alt="Student" width={24} height={24} className="rounded-full" /> */}
+        {showModal && (
+          <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/20 bg-opacity-60 backdrop-blur-sm">
+            <div className="bg-white p-8 rounded-2xl w-full max-w-md shadow-xl border border-gray-200">
+              <h2 className="text-2xl font-bold text-center text-gray-900 mb-6 tracking-wide">
+                Course Enrollment
+              </h2>
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div>
+                  <label className="block text-gray-700 font-medium mb-1" htmlFor="name">
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-700 font-medium mb-1" htmlFor="phone">
+                    Phone Number
+                  </label>
+                  <input
+                    id="phone"
+                    type="text"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-700 font-medium mb-1" htmlFor="email">
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-700 font-medium mb-1" htmlFor="course">
+                    Select Course
+                  </label>
+                  <select
+                    id="course"
+                    name="course"
+                    value={formData.course}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                  >
+                    <option value="Commercial Pilot License">Commercial Pilot License</option>
+                  </select>
+                </div>
+
+                {/* Dynamic CAPTCHA with random 6-digit number */}
+                <div className="text-center">
+                  <div
+                    className="mx-auto mb-2 p-4 bg-gray-200 rounded-lg text-2xl font-cursive"
+                    style={{ fontFamily: 'Dancing Script, cursive' }} // Cursive font
+                  >
+                    {captchaValue}
+                  </div>
+                  <div className="flex items-center justify-center space-x-2">
+                    <input
+                      type="text"
+                      value={captchaUserInput}
+                      onChange={(e) => setCaptchaUserInput(e.target.value)}
+                      placeholder="Type the number above"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                      required
+                    />
+                    <button
+                      type="button"
+                      onClick={refreshCaptcha}
+                      className="text-gray-500 hover:text-gray-700"
+                    >
+                      ↻
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {/* Add logic to play audio if available */}}
+                      className="text-gray-500 hover:text-gray-700"
+                    >
+                      🔊
+                    </button>
+                  </div>
+                  {captchaError && <div className="text-red-500 text-sm">{captchaError}</div>}
+                </div>
+
+                <div className="flex justify-between items-center pt-2">
+                  <button
+                    type="submit"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-full shadow-md transition focus:outline-none focus:ring-4 focus:ring-blue-400"
+                  >
+                    Submit
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                    className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold px-6 py-2 rounded-full shadow-sm transition focus:outline-none focus:ring-4 focus:ring-gray-300"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </form>
             </div>
-            <p className="text-blue-600 font-bold text-lg">CHPL</p>
-            <p className="text-sm text-gray-700">Commercial Helicopter Pilot License</p>
           </div>
-          </div>
-        </div>
-      </section>
-    
-      {showModal && (
-      <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/20 bg-opacity-60 backdrop-blur-sm">
-      <div className="bg-white p-8 rounded-2xl w-full max-w-md shadow-xl border border-gray-200">
-        <h2 className="text-2xl font-bold text-center text-gray-900 mb-6 tracking-wide">
-          Course Enrollment
-        </h2>
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label className="block text-gray-700 font-medium mb-1" htmlFor="name">
-              Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-              placeholder="Enter your full name"
-              required
-            />
-          </div>
-    
-          <div>
-            <label className="block text-gray-700 font-medium mb-1" htmlFor="phone">
-              Phone Number
-            </label>
-            <input
-              id="phone"
-              type="text"
-              name="phone"
-              value={formData.phone}
-              onChange={handleInputChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-              placeholder="Enter your phone number"
-              required
-            />
-          </div>
-    
-          <div>
-            <label className="block text-gray-700 font-medium mb-1" htmlFor="email">
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-              placeholder="Enter your email address"
-              required
-            />
-          </div>
-    
-          <div>
-            <label className="block text-gray-700 font-medium mb-1" htmlFor="course">
-              Select Course
-            </label>
-            <select
-              id="course"
-              name="course"
-              value={formData.course}
-              onChange={handleInputChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-            >
-              <option value="Commercial Pilot License">Commercial Pilot License</option>
-              <option value="Private Pilot License">Private Pilot License</option>
-              <option value="Helicopter Pilot Training">Helicopter Pilot Training</option>
-              <option value="Cadet Pilot Programme">Cadet Pilot Programme</option>
-            </select>
-          </div>
-    
-          <div className="flex justify-between items-center pt-2">
-            <button
-              type="submit"
-              className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold px-8 py-3 rounded-full shadow-md transition focus:outline-none focus:ring-4 focus:ring-blue-400"
-            >
-              Submit
-            </button>
-            <button
-              type="button"
-              onClick={() => setShowModal(false)}
-              className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold px-8 py-3 rounded-full shadow-sm transition focus:outline-none focus:ring-4 focus:ring-gray-300"
-            >
-              Cancel
-            </button>
-          </div>
-        </form>
+        )}
       </div>
-    </div>
-    
-      )}
-    </div>
     </section>
   );
 }

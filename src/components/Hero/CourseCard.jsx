@@ -91,7 +91,7 @@ export default function CourseCard1() {
   const courses = [
     {
       category: 'Pilot Training',
-      image: '/1.png',
+      image: '/commercial-pilot-license/1.png',
       lessons: 200,
       duration: '9 Months',
       title: 'Commercial Pilot License (CPL)',
@@ -101,7 +101,7 @@ export default function CourseCard1() {
     },
     {
       category: 'Pilot Training',
-      image: '/2.png',
+      image: '/commercial-pilot-license/2.png',
       lessons: 40,
       duration: '3-6 Months',
       title: 'Private Pilot License (PPL)',
@@ -111,7 +111,7 @@ export default function CourseCard1() {
     },
     {
       category: 'Helicopter Training',
-      image: '/3.png',
+      image: '/commercial-pilot-license/3.png',
       lessons: 150,
       duration: '9 Months',
       title: 'Commercial Helicopter Pilot License ',

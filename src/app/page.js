@@ -10,6 +10,8 @@ import WhyChooseUs from "@/components/Hero/WhyChooseUs";
 import AcademyCard from '@/components/Hero/AcademyCard';
 import CHPLCadetProgram from '@/components/Hero/CHPLCadetProgram';
 import Image from "next/image";
+import SuccessMarquee from "@/components/Hero/SuccessMarquee";
+import InstagramTestimonials from "@/components/Hero/InstaTesti";
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
     <HeroSection/>
     <ScrollingFeatures/>
     <CategoriesSection/>
+    <SuccessMarquee/>
     <AboutUs/>
     <CourseCard1/>
     <WhyChooseUs/>
@@ -24,7 +27,9 @@ export default function Home() {
     <TestimonialsSection/>
     <CHPLCadetProgram/>
     <ScrollingPromotions/>
+    <InstagramTestimonials/>
     <ContactUsSection/>
+
 
     </>
   );

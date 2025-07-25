@@ -12,12 +12,12 @@ const features = [
 
 export default function ScrollingFeatures() {
   return (
-    <div className="overflow-hidden bg-gradient-to-r from-[#0a2640] to-[#1a3555] py-6">
+    <div className="overflow-hidden py-6">
       <marquee
         behavior="scroll"
         direction="left"
         scrollamount="8"
-        className="flex space-x-16 whitespace-nowrap text-white font-semibold text-lg"
+        className="flex space-x-16 whitespace-nowrap text-[#141c4c] font-semibold text-lg"
       >
         {features.map((text, idx) => (
           <span

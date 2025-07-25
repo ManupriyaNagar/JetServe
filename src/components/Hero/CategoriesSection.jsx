@@ -13,7 +13,7 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section className='bg-[#647424]'>
+    <section className='bg-[#141c4c]'>
     <div className="page-container flex flex-col md:flex-row overflow-hidden text-white p-6 md:p-12 relative m">
       {/* Left Column */}
       <div className="flex-1">
@@ -23,7 +23,7 @@ export default function CategoriesSection() {
           </div>
           <h2 className="text-3xl md:text-5xl font-bold mt-2">
             Explore Our Aviation <br />
-            <span className=" text-[#342c74]">Courses</span>
+            <span className=" text-[white]">Courses</span>
           </h2>
         </div>
 
@@ -32,7 +32,7 @@ export default function CategoriesSection() {
           {categories.map((item) => (
             <div
               key={item.id}
-              className="group flex items-center justify-between border-b border-dashed border-white/40 px-4 py-3 transition-all duration-300 ease-in-out hover:bg-white hover:py-8"
+              className="text-white group flex items-center justify-between border-b border-dashed border-white/40 px-4 py-3 transition-all duration-300 ease-in-out hover:bg-white hover:py-8"
             >
               <div className="transition-all duration-300 group-hover:text-black flex items-start gap-2 group-hover:ml-4 hover:gap-0">
                 {/* ID or Arrow Icon on Hover */}
@@ -47,7 +47,7 @@ export default function CategoriesSection() {
                 {/* Name and Count */}
                 <div>
                   <span className="font-semibold">{item.name}</span>
-                  <p className="text-sm text-white/80 group-hover:text-black">{item.count}</p>
+                  <p className=" text-sm text-white group-hover:text-black">{item.count}</p>
                 </div>
               </div>
 

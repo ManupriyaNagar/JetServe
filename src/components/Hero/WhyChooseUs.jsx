@@ -5,22 +5,22 @@ export default function WhyChooseUs() {
     {
       title: 'DGCA-Approved Training',
       description: 'Our programs meet the highest standards set by the Directorate General of Civil Aviation, ensuring quality education.',
-      icon: '/extra4.png',
+      icon: '/commercial-pilot-license/extra4.png',
     },
     {
       title: 'Modern Aircraft Fleet',
       description: 'Train on advanced aircraft like King Air C-90 & B-200 for real-world pilot experience.',
-     icon: '/extra1.png',
+     icon: '/commercial-pilot-license/extra1.png',
     },
     {
       title: 'Scholarship Opportunities',
       description: 'Up to ₹10 Lakh scholarships available for meritorious students to support your aviation journey.',
-      icon: '/extra2.png',
+      icon: '/commercial-pilot-license/extra2.png',
     },
     {
       title: 'Experienced Instructors',
       description: 'Learn from seasoned professionals with extensive industry expertise, guiding you to success.',
-  icon: '/extra3.png',
+  icon: '/commercial-pilot-license/extra3.png',
     },
   ];
   return (
@@ -41,12 +41,12 @@ export default function WhyChooseUs() {
         {/* Left - Images */}
         <div className="relative mt-40 md:mt-0  w-full lg:w-1/2 flex justify-center items-center">
           <img
-            src="/extra9.png"
+            src="/commercial-pilot-license/extra9.png"
             alt="Student 1"
             className="rounded-full w-80 h-80 object-cover absolute -top-16 right-1 ring-4 ring-white"
           />
           <img
-            src="/extra10.png"
+            src="/commercial-pilot-license/extra10.png"
             alt="Student 2"
             className="rounded-full w-52 h-52 object-cover absolute -bottom-10  ring-4 ring-white"
           />
